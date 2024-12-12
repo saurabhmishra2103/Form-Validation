@@ -74,7 +74,7 @@ const FormValidate = () => {
     return (
         <>
             <div className='formValidate'>
-                <form onSubmit={handleSubmit} method='post'>
+                <form onSubmit={handleSubmit} method='get'>
                     <h1>Register</h1>
                     {inputs.map((input) => (
                         <FormInput key={inputs.id} {...input} value={values[input.name]} onChange={onChange} />
